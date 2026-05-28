@@ -29,7 +29,7 @@ export const cicdCheck = async (req, res) => {
   try {
 
     res.status(200).json({
-      status: "testing CI/CD Pipeline with GitHub Actions working"
+      status: "testing CI/CD Pipeline with GitHub Actions working this is great news"
     });
   } catch (error) {
 
