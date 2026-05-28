@@ -6,9 +6,11 @@
   "scripts": {
     "dev": "nodemon src/server.js",
     "start": "node src/server.js",
+    "lint": "eslint src/",
+    "prisma:validate": "prisma validate",
     "prisma:generate": "prisma generate",
     "prisma:migrate": "prisma migrate dev --name init"
-  },
+},
   "dependencies": {
     "@prisma/client": "^5.8.0",
     "bcryptjs": "^2.4.3",
@@ -24,6 +26,9 @@
     "zod": "^3.22.2"
   },
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.4.0",
+    "globals": "^17.6.0",
     "nodemon": "^2.0.22",
     "prisma": "^5.8.0"
   }
