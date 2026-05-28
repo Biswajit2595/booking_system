@@ -44,6 +44,7 @@ jobs:
             export NVM_DIR="$HOME/.nvm"
             [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
             cd booking_system
+            git checkout -- .
             git pull origin main
             npm install
             pm2 restart booking-system
